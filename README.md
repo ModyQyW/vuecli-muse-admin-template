@@ -87,6 +87,8 @@ if you want to use npm or yarn to install material-design-icons, follow the step
 
 - Draggable
 
+- Icons
+
 - Editor
 
   - Rich text editor
