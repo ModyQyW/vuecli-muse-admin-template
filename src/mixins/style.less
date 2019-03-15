@@ -1,0 +1,96 @@
+@import './colors';
+
+#app {
+  font-family: 'Roboto', 'Avenir', Helvetica, monospace, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  font-size: .95rem;
+  line-height: 1.5;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+ul, menu, dir {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+}
+
+.container {
+  height: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.row {
+  margin: 0;
+}
+
+.col {
+  margin: 8px 0;
+}
+
+.gray-container,
+.grey-container {
+  background-color: @gray300;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+/* 定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸 */
+::-webkit-scrollbar { 
+  width: 8px; 
+  height: 8px; 
+  background-color: #F5F5F5; 
+} 
+   
+/* 定义滚动条轨道 内阴影+圆角 */ 
+::-webkit-scrollbar-track { 
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  border-radius: 10px; 
+  background-color: #F5F5F5; 
+} 
+   
+/* 定义滑块 内阴影+圆角 */ 
+::-webkit-scrollbar-thumb { 
+  border-radius: 10px; 
+  box-shadow: inset 0 0 6px rgba(0,0,0,.3); 
+  background-color: #555; 
+}
+
+.row-item {
+  width: 100%;
+}
+
+.col-item {
+  height: 100%;
+}
+
+.mu-breadcrumbs-item {
+  color: @white!important;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &.is-disabled {
+    color: @black!important;
+    text-decoration: none;
+  }
+}
+
+.mu-breadcrumbs>li {
+  font-size: 20px;
+  font-weight: 700;
+}

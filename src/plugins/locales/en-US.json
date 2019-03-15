@@ -1,0 +1,80 @@
+{
+  "mock": {
+    "breadcrumb": "breadcrumb"
+  },
+  "request": {
+    "loading": "loading",
+    "badStatusCode": "Bad status code!",
+    "noResponse": "Request sent but no response!",
+    "requestError": "Request error! Check your Internet!",
+    "noAccount": "No such account!"
+  },
+  "message": {
+    "alertTitle": "alert",
+    "alertIllegalOperation": "Illegal operation!",
+    "alertInnerWidthTooSmall": "Width too small! Impact using!",
+    "alertScreenFullDisable": "Screen full is disabled!",
+    "okLabel": "OK",
+    "cancelLabel": "CANCEL"
+  },
+  "routes": {
+    "index": "index",
+    "index1": "index1",
+    "index2": "index2",
+    "test": "test",
+    "dashboard": "dashboard",
+    "nested": "nested",
+    "nestedIndex": "nestedIndex",
+    "nestedTest": "nestedTest",
+    "nestedTestIndex1": "nestedTestIndex1",
+    "nestedTestIndex2": "nestedTestIndex2",
+    "clipboard": "clipboard",
+    "zip": "ZIP",
+    "editor": "editor",
+    "jsonEditor": "JSON editor",
+    "markdownEditor": "markdown editor",
+    "richTextEditor": "rich text editor",
+    "draggable": "draggable",
+    "table": "table",
+    "icons": "icons"
+  },
+  "appbar": {
+    "fullscreen": {
+      "toggle": "toggle fullscreen"
+    },
+    "theme": {
+      "light": "light",
+      "dark": "dark"
+    },
+    "account": {
+      "personalCenter": "Personal Center",
+      "signout": "Sign Out"
+    }
+  },
+  "signinForm": {
+    "usernameLabel": "username",
+    "passwordLabel": "password",
+    "signinBtn": "Sign In",
+    "resetBtn": "Reset",
+    "usernameRequired": "username required",
+    "usernameLongerThan3": "username must longer than 3",
+    "passwordRequired": "password required",
+    "passwordShorterThan16": "password must longer than 16"
+  },
+  "utils": {
+    "storageMsg": {
+      "notSupportLocalStorage": "Not support LocalStorage!",
+      "notSupportSessionStorage": "Not support SessionStorage!",
+      "notExactParams": "Not exact params!",
+      "notSupportParamType": "Not Support param type!",
+      "notSupportKeyType": "Not support key type!",
+      "notSupportKeysType": "Not support keys type!",
+      "keyNotExists": "Key not exists!",
+      "notSupportValueType": "Not support value type!"
+    },
+    "validatorMsg": {
+      "typeError": "Type error!",
+      "notExactParams": "Not exact params!"
+    }
+  }
+}

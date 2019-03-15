@@ -1,0 +1,80 @@
+{
+  "mock": {
+    "breadcrumb": "面包屑导航"
+  },
+  "request": {
+    "loading": "处理中...",
+    "badStatusCode": "响应的状态码不正确！",
+    "noResponse": "发送了请求，但没有响应！",
+    "requestError": "请求错误，请检查网络！",
+    "noAccount": "账户不存在！"
+  },
+  "message": {
+    "alertTitle": "提示",
+    "alertIllegalOperation": "非法操作！",
+    "alertInnerWidthTooSmall": "宽度过小，将影响使用！",
+    "alertScreenFullDisable": "全屏功能被禁止！",
+    "okLabel": "确定",
+    "cancelLabel": "取消"
+  },
+  "routes": {
+    "index": "首页",
+    "index1": "首页1",
+    "index2": "首页2",
+    "test": "测试",
+    "dashboard": "仪表板",
+    "nested": "嵌套",
+    "nestedIndex": "嵌套首页",
+    "nestedTest": "嵌套测试",
+    "nestedTestIndex1": "嵌套测试首页1",
+    "nestedTestIndex2": "嵌套测试首页2",
+    "clipboard": "剪切板",
+    "zip": "ZIP",
+    "editor": "编辑器",
+    "jsonEditor": "JSON 编辑器",
+    "markdownEditor": "markdown 编辑器",
+    "richTextEditor": "富文本编辑器",
+    "draggable": "拖动",
+    "table": "表格",
+    "icons": "图标"
+  },
+  "appbar": {
+    "fullscreen": {
+      "toggle": "切换全屏"
+    },
+    "theme": {
+      "light": "浅色",
+      "dark": "深色"
+    },
+    "account": {
+      "personalCenter": "个人中心",
+      "signout": "登出"
+    }
+  },
+  "signinForm": {
+    "usernameLabel": "账号",
+    "passwordLabel": "密码",
+    "signinBtn": "登入",
+    "resetBtn": "重置",
+    "usernameRequired": "必须填写用户名",
+    "usernameLongerThan3": "用户名长度不少于3个字符",
+    "passwordRequired": "必须填写密码",
+    "passwordShorterThan16": "密码长度不多于16个字符"
+  },
+  "utils": {
+    "storageMsg": {
+      "notSupportLocalStorage": "不支持 LocalStorage！",
+      "notSupportSessionStorage": "不支持 SessionStorage！",
+      "notExactParams": "参数数量不准确！",
+      "notSupportParamType": "参数类型不支持！",
+      "notSupportKeyType": "Key 类型不支持！",
+      "notSupportKeysType": "Keys 类型不支持！",
+      "keyNotExists": "Key 不存在！",
+      "notSupportValueType": "Value 类型不支持！"
+    },
+    "validatorMsg": {
+      "typeError": "类型错误！",
+      "notExactParams": "参数数量不准确！"
+    }
+  }
+}
