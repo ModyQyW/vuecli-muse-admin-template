@@ -34,7 +34,7 @@
     "jsonEditor": "JSON 编辑器",
     "markdownEditor": "markdown 编辑器",
     "richTextEditor": "富文本编辑器",
-    "draggable": "拖动",
+    "draggable": "拖拽",
     "table": "表格",
     "icons": "图标"
   },

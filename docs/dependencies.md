@@ -14,6 +14,7 @@
 - [moment](https://github.com/moment/moment/): Parse, validate, manipulate, and display dates in javascript.
 - [muse-ui](https://github.com/museui/muse-ui): Material Design UI library for Vuejs 2.0.
 - [normalize.css](https://github.com/necolas/normalize.css): A modern alternative to CSS resets.
+- [quill](https://github.com/quilljs/quill): A modern WYSIWYG editor built for compatibility and extensibility.
 - [screenfull](https://github.com/sindresorhus/screenfull.js): Simple wrapper for cross-browser usage of the JavaScript Fullscreen API.
 - [sortablejs](https://www.npmjs.com/package/sortablejs): a JavaScript library for reorderable drag-and-drop lists.
 - [tui-editor](https://github.com/nhnent/tui.editor): Markdown WYSIWYG Editor. GFM Standard + Chart & UML Extensible.
@@ -32,3 +33,5 @@
 - [vuedraggable](https://www.npmjs.com/package/vuedraggable): Vue component (Vue.js 2.0) or directive (Vue.js 1.0) allowing drag-and-drop and synchronization with view model array. Based on and offering all features of Sortable.js.
 - [vuex](https://github.com/vuejs/vuex): Centralized State Management for Vue.js.
 - [xlsx](https://docs.sheetjs.com/): SheetJS Community Edition -- Spreadsheet Parser and Writer.
+
+Besides, I use iconfont to add extra icons. For more information, check [usage.md](./usage.md).

@@ -33,3 +33,5 @@
 - [vuedraggable](https://www.npmjs.com/package/vuedraggable)：允许拖放和与视图模型数组同步，基于并提供 sortablejs 的所有功能。
 - [vuex](https://github.com/vuejs/vuex)：Vue 状态管理模式。
 - [xlsx](https://docs.sheetjs.com/)：各种表格格式的解析器和编写器。
+
+另外，我使用了 iconfont 来加入额外的图标。查看 [usage_cn.md](./usage_cn.md) 了解更多。

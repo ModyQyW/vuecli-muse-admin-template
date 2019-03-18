@@ -10,7 +10,7 @@ const resolve = dir => path.join(__dirname, dir);
 // 如 https://www.foobar.com/my-app/
 // 修改为 /my-app/
 const publicPath = process.env.NODE_ENV === 'production'
-  ? '/'
+  ? '/vuecli-muse-admin-template/dist/'
   : '/';
 
 module.exports = {

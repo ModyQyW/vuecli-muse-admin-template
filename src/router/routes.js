@@ -118,7 +118,7 @@ export const mutableRoutes = [
   // 编辑器
   editor,
   // draggable
-  // 拖动
+  // 拖拽
   draggable,
   // table
   // 表格

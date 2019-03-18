@@ -46,7 +46,7 @@ yarn build
 yarn lint
 ```
 
-注意：因为使用 npm 或 yarn 安装总是会出现错误，目前我在 [index.html](./public/index.html) 中引入了 material-design-icons。
+注意：因为国内使用 npm 或 yarn 安装 material-design-icons 总是会出现错误，目前我在 [index.html](./public/index.html) 中引入了它。
 
 如果你想要用 npm 或 yarn 安装 material-design-icons，请参考以下步骤：
 
@@ -56,9 +56,7 @@ yarn lint
 
 ## 特性
 
-- 自主配置脚手架
-
-[vue-cli 3 配置参考](https://cli.vuejs.org/zh/config/)
+- [自主配置脚手架](https://cli.vuejs.org/zh/config/)
 
 - 权限等级控制
 
@@ -87,7 +85,7 @@ yarn lint
 
 - 导出 Zip
 
-- 拖动
+- 拖拽
 
 - 图标
   
@@ -99,25 +97,11 @@ yarn lint
 
   - JSON 编辑器
 
-- 表格
+- 简单表格
 
-  - 动态表格
+- 错误页面：401，403，404，500
 
-  - 内联编辑
-
-- 错误页面
-
-  - 401
-
-  - 403
-
-  - 404
-
-  - 500
-
-- 图表
-
-  - vue-echarts √
+- 图表：vue-echarts
 
 ## 使用
 

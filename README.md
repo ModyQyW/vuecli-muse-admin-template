@@ -46,7 +46,7 @@ yarn build
 yarn lint
 ```
 
-**Attention**: I import material-design-icons in [index.html](./public/index.html) for now, cause using npm or yarn always leads to a error.
+**Attention**: I import material-design-icons in [index.html](./public/index.html) for now, cause using npm or yarn always leads to a error in China.
 
 if you want to use npm or yarn to install material-design-icons, follow the steps below.
 
@@ -97,25 +97,11 @@ if you want to use npm or yarn to install material-design-icons, follow the step
 
   - JSON editor
 
-- Table
+- Simple table
 
-  - Dynamic table
+- Error pages: 401, 403, 404, 500
 
-  - Inline edit table
-
-- Error pages
-
-  - 401
-
-  - 403
-
-  - 404
-
-  - 500
-
-- Charts
-
-  - vue-echarts
+- Charts: vue-echarts
 
 ## Usage
 
