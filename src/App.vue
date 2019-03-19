@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <mu-fade-transition mode="out-in">
+      <router-view></router-view>
+    </mu-fade-transition>
   </div>
 </template>
 
@@ -9,12 +11,3 @@ export default {
   name: 'app',
 };
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-}
-</style>

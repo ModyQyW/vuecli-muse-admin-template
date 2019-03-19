@@ -2,7 +2,9 @@
   <mu-flex
     class="app-content"
     :class="isOpen">
-    <router-view :key="this.$route.fullPath"/>
+    <mu-fade-transition mode="out-in">
+      <router-view :key="this.$route.fullPath"/>
+    </mu-fade-transition>
   </mu-flex>
 </template>
 

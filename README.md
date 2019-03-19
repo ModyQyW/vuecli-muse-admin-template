@@ -46,13 +46,15 @@ yarn build
 yarn lint
 ```
 
-**Attention**: I import material-design-icons in [index.html](./public/index.html) for now, cause using npm or yarn always leads to a error in China.
+**Attention**: I import local material-design-icons related files in [@/plugins/muse/index.js](./src/plugins/muse/index.js) for now cause using npm or yarn to install always leads to a error in China.
 
 if you want to use npm or yarn to install material-design-icons, follow the steps below.
 
-- comment Line 9 in [index.html](./public/index.html)
+- comment Line 63 in [@/plugins/muse/index.js](./src/plugins/muse/index.js)
 - run `npm i --save material-design-icons` or `yarn add material-design-icons` in shell
-- uncomment Line 63 in [muse/index.js](./src/plugins/muse/index.js)
+- uncomment Line 64 in [@/plugins/muse/index.js](./src/plugins/muse/index.js)
+
+**Do not** use unpkg's and bootcss's css of material icons. They will lead to lack of some icons.
 
 ## Features
 
@@ -102,6 +104,10 @@ if you want to use npm or yarn to install material-design-icons, follow the step
 - Error pages: 401, 403, 404, 500
 
 - Charts: vue-echarts
+
+## Code Style
+
+Please follow [Vue.js Style Guide](https://vuejs.org/v2/style-guide/index.html).
 
 ## Usage
 

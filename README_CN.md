@@ -46,13 +46,13 @@ yarn build
 yarn lint
 ```
 
-注意：因为国内使用 npm 或 yarn 安装 material-design-icons 总是会出现错误，目前我在 [index.html](./public/index.html) 中引入了它。
+注意：因为国内使用 npm 或 yarn 安装 material-design-icons 总是会出现错误，目前我在 [@/plugins/muse/index.js](./src/plugins/muse/index.js) 中引入了本地的相关文件。
 
 如果你想要用 npm 或 yarn 安装 material-design-icons，请参考以下步骤：
 
-- 注释 [./public/index.html](./public/index.html) 第 9 行
+- 注释 [@/plugins/muse/index.js](./src/plugins/muse/index.js) 第 63 行
 - 命令行运行`npm i --save material-design-icons`或`yarn add material-design-icons`
-- 取消注释 [@/plugins/muse/index.js](./src/plugins/muse/index.js) 第 63 行
+- 取消注释 [@/plugins/muse/index.js](./src/plugins/muse/index.js) 第 64 行
 
 ## 特性
 
@@ -102,6 +102,10 @@ yarn lint
 - 错误页面：401，403，404，500
 
 - 图表：vue-echarts
+
+## 代码风格
+
+请遵循 [Vue.js 风格指南](https://cn.vuejs.org/v2/style-guide/)。
 
 ## 使用
 

@@ -60,6 +60,7 @@ import NProgress from 'muse-ui-progress';
 // Roboto
 import 'typeface-roboto/index.css';
 // materail-design-icons
+import './material-design-icons/material-icons.css';
 // import 'material-design-icons/iconfont/material-icons.css';
 
 Vue.use(Alert);
