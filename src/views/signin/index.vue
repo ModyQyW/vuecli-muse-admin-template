@@ -174,7 +174,7 @@ export default {
   background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-image: url('../../assets/background/bg4.jpg');
+  background-image: url('../../assets/images/background/bg4.jpg');
 
   .form-wrapper {
     width: 350px;

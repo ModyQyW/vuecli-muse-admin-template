@@ -7,22 +7,22 @@ import { getToken } from '@/utils/modules/auth';
 const devUrl = 'https://easy-mock.com/mock/5c75087a6ce4da08919aede1/vuecli-muse-admin-template';
 // prod environment api url
 // 生产环境接口 Url
-const proUrl = '';
-const baseUrl = process.env.NODE_ENV === 'development' ? devUrl : proUrl;
+const prodUrl = '';
+const baseUrl = process.env.NODE_ENV === 'development' ? devUrl : prodUrl;
 
 // base url
 // 接口 url 前缀
 axios.defaults.baseURL = baseUrl;
 // timeout setting
 // 超时设置
-axios.defaults.timeout = 30000;
+axios.defaults.timeout = 3000;
 // take cookie or not
 // 是否携带 cookie
 axios.defaults.withCredentials = false;
 // headers
 axios.defaults.headers = {
   'X-Requested-With': 'XMLHttpRequest',
-  'Content-Type': 'application/json;charset=UTF-8',
+  'Content-Type': 'application/json',
   Accept: 'application/json',
 };
 // 验证响应状态
@@ -40,8 +40,7 @@ axios.interceptors.request.use(
   (config) => {
     const token = getToken();
     if (token) {
-      // eslint-disable-next-line
-      config.headers['token'] = token;
+      Object.assign(config.headers, { token });
     }
     return config;
   },
@@ -49,7 +48,8 @@ axios.interceptors.request.use(
 // response interceptor
 // 响应拦截器
 axios.interceptors.response.use(
-  (response) => { console.log('response', response); return response.data; },
+  // (response) => { console.log('response', response); return response.data; },
+  response => response.data,
   (error) => {
     const err = {
       success: false,
@@ -104,15 +104,16 @@ Vue.prototype.$request = {
       data,
     });
   },
-  upload(url, formData) {
+  upload(url, data) {
     return axios({
       method: 'post',
       headers: {
         'X-Requested-With': 'XMLHttpRequest',
         'Content-Type': 'multipart/form-data',
+        Accept: 'application/json',
       },
       url,
-      formData,
+      data,
     });
   },
 };

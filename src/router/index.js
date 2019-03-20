@@ -25,6 +25,7 @@ router.beforeEach((to, from, next) => {
   if (store.getters['auth/token']) {
     console.log('in1');
     // has token =>
+    // 存在 token =>
     if (commonRoutes.indexOf(to.path) !== -1) {
       // going to common routes => go to dashboard page
       // 准备前往 common routes => 跳转到 dashboard 页
