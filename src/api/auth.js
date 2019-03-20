@@ -1,6 +1,6 @@
 import Vue from 'vue';
 
-const { $request: request } = Vue.prototype;
+const { $request } = Vue.prototype;
 
 /**
  * sign in
@@ -10,7 +10,7 @@ const { $request: request } = Vue.prototype;
  * @returns Promise<Object>
  */
 export function signin(data) {
-  return request.post('/auth/signin', data);
+  return $request.post('/auth/signin', data);
 }
 
 /**
@@ -21,5 +21,5 @@ export function signin(data) {
  * @returns Promise<Object>
  */
 export function signup(data) {
-  return request.post('/auth/signup', data);
+  return $request.post('/auth/signup', data);
 }
