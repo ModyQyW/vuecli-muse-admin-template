@@ -22,8 +22,8 @@
 
 <script>
 /* eslint-disable */
-import enusIcon from '@a/icons/en-US.jpg';
-import zhcnIcon from '@a/icons/zh-CN.jpg';
+import enusIcon from '@a/icons/us.png';
+import zhcnIcon from '@a/icons/cn.png';
 /* eslint-enable */
 
 export default {
