@@ -4,7 +4,6 @@
 - [axios](https://github.com/axios/axios)：基于 Promise 的浏览器 http 客户端，用于发送请求。
 - [better-scroll](https://ustbhuangyi.github.io/better-scroll/doc/zh-hans/)：一款重点解决移动端（已支持 PC）各种滚动场景需求的插件。
 - [codemirror](https://github.com/codemirror/CodeMirror)：浏览器内代码编辑器。
-- [cropperjs](https://github.com/fengyuanchen/cropperjs)：图像裁剪器。
 - [driver.js](https://github.com/kamranahmedse/driver.js)：提高用户对页面某部分的关注度。
 - [echarts](https://github.com/apache/incubator-echarts)：提供直观，交互丰富，可高度个性化定制的数据可视化图表。
 - [file-saver](https://github.com/eligrey/FileSaver.js)：HTML5 文件保存的实现。
@@ -23,6 +22,7 @@
 - [vue-clipboard2](https://github.com/Inndy/vue-clipboard2)：适用于 Vue 的 clipboard.js 封装。
 - [vue-content-placeholders](https://github.com/michalsnik/vue-content-placeholders)：可组合的 Vue 组件，用于渲染假内容。
 - [vue-count-to](https://github.com/PanJiaChen/vue-countTo)：在指定的持续时间内计入目标数字的 Vue 组件。
+- [vue-cropperjs](https://github.com/Agontuk/vue-cropperjs)：适用于 Vue 的 cropperjs 封装。
 - [vue-echarts](https://github.com/ecomfe/vue-echarts)：Vue 的 ECharts 组件。
 - [vue-i18n](https://kazupon.github.io/vue-i18n/): Vue.js 的国际化组件。
 - [vue-material-design-icons](https://gitlab.com/robcresswell/vue-material-design-icons): Vue 单文件组件的 Material Design Icons 的收集。

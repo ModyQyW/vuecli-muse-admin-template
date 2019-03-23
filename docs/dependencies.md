@@ -4,7 +4,6 @@
 - [axios](https://github.com/axios/axios): Promise based HTTP client for the browser and node.js.
 - [better-scroll](https://ustbhuangyi.github.io/better-scroll/doc/en/): A plugin which is aimed at solving scrolling circumstances on the mobile side (PC supported already).
 - [codemirror](https://github.com/codemirror/CodeMirror): In-browser code editor.
-- [cropperjs](https://github.com/fengyuanchen/cropperjs): JavaScript image cropper.
 - [driver.js](https://github.com/kamranahmedse/driver.js): A light-weight, no-dependency, vanilla JavaScript engine to drive the user's focus across the page.
 - [echarts](https://github.com/apache/incubator-echarts): A powerful, interactive charting and visualization library for browser.
 - [file-saver](https://github.com/eligrey/FileSaver.js): An HTML5 saveAs() FileSaver implementation.
@@ -23,6 +22,7 @@
 - [vue-clipboard2](https://github.com/Inndy/vue-clipboard2): A simple vue2 binding to clipboard.js.
 - [vue-content-placeholders](https://github.com/michalsnik/vue-content-placeholders): Composable components for rendering fake (progressive) content like facebook in vue.
 - [vue-count-to](https://github.com/PanJiaChen/vue-countTo): A vue component that will count to a target number at a specified duration.
+- [vue-cropperjs](https://github.com/Agontuk/vue-cropperjs): A Vue wrapper component for cropperjs.
 - [vue-echarts](https://github.com/ecomfe/vue-echarts): ECharts component for Vue.js.
 - [vue-i18n](https://kazupon.github.io/vue-i18n/): Internationalization plugin for Vue.js.
 - [vue-material-design-icons](https://gitlab.com/robcresswell/vue-material-design-icons): A collection of material design icons as Vue single file components.
