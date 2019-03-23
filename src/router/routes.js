@@ -6,6 +6,7 @@ import editor from './modules/editor';
 import draggable from './modules/draggable';
 import table from './modules/table';
 import icons from './modules/icons';
+import customScatterChart from './modules/customScatterChart';
 
 /*
  * Attention: the route must redirect to its child if it has children.
@@ -126,6 +127,9 @@ export const mutableRoutes = [
   // icons
   // 图标
   icons,
+  // custom scatter chart
+  // 自定义散点图
+  customScatterChart,
   // 404
   {
     path: '*',

@@ -36,7 +36,8 @@
     "richTextEditor": "rich text editor",
     "draggable": "draggable",
     "table": "table",
-    "icons": "icons"
+    "icons": "icons",
+    "customScatterChart": "custom scatter chart"
   },
   "appbar": {
     "fullscreen": {

@@ -36,7 +36,8 @@
     "richTextEditor": "富文本编辑器",
     "draggable": "拖拽",
     "table": "表格",
-    "icons": "图标"
+    "icons": "图标",
+    "customScatterChart": "自定义散点图"
   },
   "appbar": {
     "fullscreen": {
