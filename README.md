@@ -25,6 +25,9 @@ See [Features](#Features) to get more.
 ## Getting Started
 
 ```sh
+git clone https://github.com/ModyQyW/vuecli-muse-admin-template.git
+cd vuecli-muse-admin-template
+
 # install
 # npm i
 yarn
@@ -129,7 +132,7 @@ If you think this is helpful, you can buy me a coffee :D
 
 |WeChat|Alipay|
 |:-:|:-:|
-|<img src="https://raw.githubusercontent.com/ModyQyW/Pictures/master/wechat.png" style="width: 300px;"/>|<img src="https://raw.githubusercontent.com/ModyQyW/Pictures/master/alipay.jpg" style="width: 300px;" />|
+|<img src="https://raw.githubusercontent.com/ModyQyW/Pictures/master/wechat.png" style="height: 200px;"/>|<img src="https://raw.githubusercontent.com/ModyQyW/Pictures/master/alipay.jpg" style="height: 200px;" />|
 
 ## Browsers Support
 

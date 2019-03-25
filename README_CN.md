@@ -25,6 +25,10 @@ vuecli-muse-admin-template 是一个后台集成解决方案。它由 [vue-cli 3
 ## 起步
 
 ```sh
+# 克隆项目并进入到项目根目录
+git clone https://github.com/ModyQyW/vuecli-muse-admin-template.git
+cd vuecli-muse-admin-template
+
 # 安装依赖
 # npm i
 yarn
@@ -127,7 +131,7 @@ yarn lint
 
 |WeChat|Alipay|
 |:-:|:-:|
-|<img src="https://raw.githubusercontent.com/ModyQyW/Pictures/master/wechat.png" style="width: 300px;"/>|<img src="https://raw.githubusercontent.com/ModyQyW/Pictures/master/alipay.jpg" style="width: 300px;" />|
+|<img src="https://raw.githubusercontent.com/ModyQyW/Pictures/master/wechat.png" style="height: 200px;"/>|<img src="https://raw.githubusercontent.com/ModyQyW/Pictures/master/alipay.jpg" style="height: 200px;" />|
 
 ## 浏览器支持
 
