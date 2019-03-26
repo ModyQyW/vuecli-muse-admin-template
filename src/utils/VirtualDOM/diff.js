@@ -107,7 +107,8 @@ const getMoves = (newData, oldData, ...rest) => {
         // if remove this ele make next ele in the right place => remove
         addRemove(moves, i);
         sim.splice(j, 1);
-        // after splice, sim[j] is the same as newData[i]
+        addUpdate(moves, i, newEle);
+        // after splice and update, sim[j] is the same as newData[i]
         // so j += 1 means moves to next ele
         j += 1;
       } else {
@@ -161,6 +162,11 @@ const arr1 = [
     x: 3,
     y: 4,
   },
+  {
+    key: 'i',
+    x: 4,
+    y: 5,
+  },
 ];
 
 const arr2 = [
@@ -208,7 +214,7 @@ const arr2 = [
 
 // const moves = getMoves(arr1, arr2);
 const moves = getMoves(arr2, arr1);
-const newData = operate(arr2, moves);
+const newData = operate(arr1, moves);
 
 console.log('moves', moves);
 console.log('newData', newData);
