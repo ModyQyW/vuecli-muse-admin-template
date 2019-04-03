@@ -56,11 +56,8 @@ export function setDrawerDocked(val) {
  * @returns { Boolean }
  */
 export function hasPermission(role, meta) {
-  if (meta) {
-    if (meta.role) {
-      return role <= meta.role;
-    }
-    return true;
+  if (meta.role === 0 || meta.role) {
+    return role <= meta.role;
   }
   return true;
 }

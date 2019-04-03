@@ -63,28 +63,16 @@ const getMoves = (newData, oldData, ...rest) => {
     if (Object.prototype.hasOwnProperty.call(newKeyIndexObj, eleKey)) {
       // newData has the same key
       // means this is a ele of both datas
-      sim.push(newData[newKeyIndexObj[eleKey]]);
+      sim.push(oldData[oldKeyIndexObj[eleKey]]);
     } else {
       // newData doesn't have the same key
-      // means this is a ele of newData
-      sim.push(null);
+      // means this is not a ele of newData
+      // sim.push(null);
+      addRemove(moves, i);
     }
     i += 1;
   }
-  // 4. remove eles isn't in newData and record these moves
-  i = 0;
-  // must use sim.length cause splice changes sim's length
-  while (i < sim.length) {
-    if (sim[i] === null) {
-      addRemove(moves, i);
-      // after splice, i points to next ele
-      // no need to add i
-      sim.splice(i, 1);
-    } else {
-      i += 1;
-    }
-  }
-  // 5. simulate inserting and removing in order to match sim and newData
+  // 4. simulate inserting and removing in order to match sim and newData
   // i: index of newData
   // j: index of sim
   i = 0;
@@ -96,27 +84,30 @@ const getMoves = (newData, oldData, ...rest) => {
       const { key: simEleKey } = simEle;
       // sim boundary not exceed
       if (newEleKey === simEleKey) {
-        // same ele => uodate, sim moves to next ele
+        // same ele => update, sim moves to next ele
+        console.log('in1');
         addUpdate(moves, i, newEle);
         j += 1;
       } else if (!Object.prototype.hasOwnProperty.call(oldKeyIndexObj, newEleKey)) {
         // new ele => insert
+        console.log('in2');
         addInsert(moves, i, newEle);
       } else if (sim[j + 1] && sim[j + 1].key === newEleKey) {
         // old ele, but not same position => check next ele in sim
         // if remove this ele make next ele in the right place => remove
+        console.log('in3');
         addRemove(moves, i);
-        sim.splice(j, 1);
         addUpdate(moves, i, newEle);
-        // after splice and update, sim[j] is the same as newData[i]
-        // so j += 1 means moves to next ele
-        j += 1;
+        // j += 2 means moves to next ele
+        j += 2;
       } else {
+        console.log('in4');
         addInsert(moves, i, newEle);
       }
     } else {
       // sim boundary exceeded
       // left eles are all new => insert all left eles
+      console.log('in5');
       addInsert(moves, i, newEle);
     }
     i += 1;
@@ -125,6 +116,7 @@ const getMoves = (newData, oldData, ...rest) => {
   // remove all left eles
   const simLen = sim.length;
   while (j < simLen) {
+    console.log('in6');
     j += 1;
     addRemove(moves, simLen - j + i);
   }
@@ -149,8 +141,8 @@ const operate = (oldData, moves) => {
 const arr1 = [
   {
     key: 'b',
-    x: 1,
-    y: 2,
+    x: 0,
+    y: 1,
   },
   {
     key: 'f',
@@ -206,13 +198,24 @@ const arr2 = [
     y: 7,
   },
   {
+    key: 'f',
+    x: 7,
+    y: 6,
+  },
+  {
     key: 'g',
     x: 7,
     y: 8,
   },
+  {
+    key: 'k',
+    x: 9,
+    y: 10,
+  },
 ];
 
 // const moves = getMoves(arr1, arr2);
+// const newData = operate(arr2, moves);
 const moves = getMoves(arr2, arr1);
 const newData = operate(arr1, moves);
 

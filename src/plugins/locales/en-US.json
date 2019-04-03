@@ -37,7 +37,14 @@
     "draggable": "draggable",
     "table": "table",
     "icons": "icons",
-    "customScatterChart": "custom scatter chart"
+    "customScatterChart": "custom scatter chart",
+    "roles": "roles",
+    "sAdmin": "sAdmin",
+    "admin": "admin",
+    "manager": "manager",
+    "developer": "developer",
+    "client": "client",
+    "user": "user"
   },
   "appbar": {
     "fullscreen": {

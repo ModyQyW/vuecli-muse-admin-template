@@ -7,6 +7,7 @@ import draggable from './modules/draggable';
 import table from './modules/table';
 import icons from './modules/icons';
 import customScatterChart from './modules/customScatterChart';
+import roles from './modules/roles';
 
 /*
  * Attention: the route must redirect to its child if it has children.
@@ -130,6 +131,9 @@ export const mutableRoutes = [
   // custom scatter chart
   // 自定义散点图
   customScatterChart,
+  // roles
+  // 角色
+  roles,
   // 404
   {
     path: '*',

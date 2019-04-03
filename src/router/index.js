@@ -30,8 +30,6 @@ router.beforeEach((to, from, next) => {
       // going to common routes => go to dashboard page
       // 准备前往 common routes => 跳转到 dashboard 页
       next({ path: '/dashboard' });
-    } else if (exceptionRoutes.indexOf(to.path) !== -1) {
-      next();
     } else if (store.getters['user/role'] === -1) {
       // check if finish pulling user info
       // not finished => get user info and add routes
@@ -53,6 +51,8 @@ router.beforeEach((to, from, next) => {
             Vue.prototype.$alert(`${res.message}`);
           }
         });
+    } else if (exceptionRoutes.indexOf(to.path) !== -1) {
+      next();
     } else if (hasPermission(store.getters['user/role'], to.meta)) {
       // finished =>
       // if has permission => ok
@@ -64,15 +64,15 @@ router.beforeEach((to, from, next) => {
       // 如果没有权限 => 跳转到 401 页
       next({ path: '/401', replace: true, query: { noGoBack: true } });
     }
-  } else if (commonRoutes.indexOf(to.path) !== -1 || exceptionRoutes.indexOf(to.path) !== -1) {
+  } else if (commonRoutes.indexOf(to.path) !== -1) {
     console.log('in2');
-    // no token & to const routes
-    // 没有 token，前往 const route
+    // no token & to common route
+    // 没有 token，前往 common route
     next();
   } else {
     console.log('in3');
-    // no token & not to const routes
-    // 没有 token，前往非 const route => 跳转到 signin 页，保留前往记录
+    // no token & not to common routes
+    // 没有 token，前往非 common route => 跳转到 signin 页，保留前往记录
     next(`/signin?redirect=${to.path}`);
   }
 });

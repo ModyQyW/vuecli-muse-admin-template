@@ -13,7 +13,7 @@
       </mu-list-item-action>
       <!-- center title -->
       <mu-list-item-title>{{ $t(`routes.${title}`) }}</mu-list-item-title>
-      <!-- icon right -->
+      <!-- right icon -->
       <mu-list-item-action v-if="hasChildren">
         <mu-icon class="toggleIcon" value="keyboard_arrow_down"></mu-icon>
       </mu-list-item-action>

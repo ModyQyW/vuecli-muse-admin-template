@@ -1,22 +1,15 @@
 module.exports = {
-  "presets": [
-    "@vue/app"
+  presets: [
+    '@vue/app',
   ],
-  "plugins": [
+  plugins: [
     [
-      "import",
+      'import',
       {
-        "libraryName": "muse-ui",
-        "libraryDirectory": "lib",
-        "camel2DashComponentName": false
-      }
+        libraryName: 'muse-ui',
+        libraryDirectory: 'lib',
+        camel2DashComponentName: false,
+      },
     ],
-    [
-      "component",
-      {
-        "libraryName": "element-ui",
-        "styleLibraryName": "theme-chalk"
-      }
-    ]
-  ]
-}
+  ],
+};

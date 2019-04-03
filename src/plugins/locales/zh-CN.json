@@ -37,7 +37,14 @@
     "draggable": "拖拽",
     "table": "表格",
     "icons": "图标",
-    "customScatterChart": "自定义散点图"
+    "customScatterChart": "自定义散点图",
+    "roles": "角色",
+    "sAdmin": "sAdmin",
+    "admin": "admin",
+    "manager": "manager",
+    "developer": "developer",
+    "client": "client",
+    "user": "user"
   },
   "appbar": {
     "fullscreen": {
