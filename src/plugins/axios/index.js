@@ -7,7 +7,7 @@ import { getToken } from '@/utils/modules/auth';
 const devUrl = 'https://easy-mock.com/mock/5c75087a6ce4da08919aede1/vuecli-muse-admin-template';
 // prod environment api url
 // 生产环境接口 Url
-const prodUrl = '';
+const prodUrl = 'https://easy-mock.com/mock/5c75087a6ce4da08919aede1/vuecli-muse-admin-template';
 const baseUrl = process.env.NODE_ENV === 'development' ? devUrl : prodUrl;
 
 // base url
