@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d210fad"],{b9cc:function(n,e,c){"use strict";c.r(e);var t=function(){var n=this,e=n.$createElement,c=n._self._c||e;return c("div",[n._v("for sAdmin only")])},l=[],u=c("2877"),o={},r=Object(u["a"])(o,t,l,!1,null,null,null);e["default"]=r.exports}}]);
