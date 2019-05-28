@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title>vuecli-muse-admin-template</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
     <style>
       html,
       body {
@@ -17,10 +18,20 @@
   </head>
   <body>
     <noscript>
-      <strong>JavaScript 被禁用，请启用JavaScript 以继续。</strong>
+      <strong>请允许 JavaScript 脚本运行。</strong>
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
     <!-- <script src="http://localhost:8098"></script> -->
+    <!-- comment scripts below when developing -->
+    <!-- cancel comment scripts below when producting -->
+    <!-- 调试时注释下面的脚本引入 -->
+    <!-- 部署时取消注释下面的脚本引入 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-router@3.0.6/dist/vue-router.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuex@3.1.1/dist/vuex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.18.0/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.14.3/dist/xlsx.full.min.js"></script>
   </body>
 </html>

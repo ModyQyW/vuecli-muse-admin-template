@@ -3,7 +3,6 @@ import VueECharts from 'vue-echarts';
 
 // 手动引入 ECharts 各模块来减小打包体积
 // 也可以在使用到的文件中引入
-// import 'echarts-gl';
 import 'echarts/lib/chart/bar';
 import 'echarts/lib/chart/line';
 import 'echarts/lib/chart/pie';

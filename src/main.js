@@ -1,9 +1,6 @@
 import Vue from 'vue';
 import App from './App.vue';
 
-// normalize.css
-import 'normalize.css';
-
 // iconfont
 import '@/assets/icons/iconfont.css';
 
